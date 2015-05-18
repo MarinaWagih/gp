@@ -1,0 +1,3 @@
+acmegp_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AcmegpBundle:Default:index }

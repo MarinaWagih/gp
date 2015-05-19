@@ -1,0 +1,4 @@
+services:
+#    acmegp.example:
+#        class: Acme\Bundle\gpBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

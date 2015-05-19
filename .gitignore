@@ -9,3 +9,7 @@
 /composer.phar
 /vendor/
 /web/bundles/
+<<<<<<< HEAD
+=======
+/nbproject/private/
+>>>>>>> a039ac2e097de1f50311c6801d3fcfc5a568968f

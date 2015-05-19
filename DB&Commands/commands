@@ -1,0 +1,33 @@
+
+ 1799  cd /var/www/html/symTest
+ 1800  cd test
+ 1801  php app/console generate:controller
+ 1802  php app/console server:run
+ 1803  php app/console doctrine:database:create
+ 1804  php app/console doctrine:generate:entities Acme/DemoBundle/Entity/Person
+ 1805  php app/console doctrine:schema:update --force
+ 1806  php app/console server:run
+ 1807  history | tail -50 > ~/Desktop/commands
+ 1808  php app/console doctrine:generate:entities Acme/DemoBundle/Entity/Post
+ 1809  php app/console doctrine:schema:update --force
+ 1810  php app/console generate:doctrine:crud
+ 1811  php app/console server:run
+ 1812  php app/console doctrine:generate:entities Acme/DemoBundle/Entity/Comment
+ 1813  php app/console doctrine:schema:update --force
+ 1814  php app/console generate:doctrine:crud
+ 1815  php app/console server:run
+ 1816  php app/console doctrine:generate:entities DemoBundle
+ 1817  php app/console doctrine:generate:entities AcmeDemoBundle
+ 1818  php app/console doctrine:schema:update --force
+ 1819  php app/console server:run
+ 1820  php app/console doctrine:schema:update --force
+ 1821  php app/console server:run
+ 1822  php app/console generate:doctrine:crud
+ 1823  php app/console server:run
+ 1824  php app/console doctrine:schema:update --force
+ 1825  mkdir ~/Desktop/gp
+ 1826  cd ~/Desktop/gp
+ 1827  symfony new gp
+ 1828  php app/console generate:bundle
+
+

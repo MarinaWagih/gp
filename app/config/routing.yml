@@ -1,8 +1,15 @@
+<<<<<<< HEAD
+gp:
+    resource: "@gpBundle/Resources/config/routing.yml"
+    prefix:   /
+
+=======
 acmegp:
     resource: "@AcmegpBundle/Resources/config/routing.yml"
     prefix:   /
 
 
+>>>>>>> a039ac2e097de1f50311c6801d3fcfc5a568968f
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

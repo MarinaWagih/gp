@@ -28,7 +28,7 @@ class Experience {
             protected $id;
         /**
         * @Assert\NotBlank()
-        * @ORM\Column(type="text")
+        * @ORM\Column(type="text",nullable=false)
         */
            protected $body;
         /**
@@ -44,7 +44,7 @@ class Experience {
          */
            protected $isDeleted;
            /** 
-            * ORM\@Column(type="datetime") 
+            * ORM\@Column(type="datetime",nullable=false) 
             */
            protected $createDate;
            
@@ -54,4 +54,52 @@ class Experience {
                 $this->isDeleted  ="0";
                 $this->isHidden   ="0";
             }
+            function getId() {
+                return $this->id;
+            }
+
+            function getBody() {
+                return $this->body;
+            }
+
+            function getPicture() {
+                return $this->picture;
+            }
+
+            function getIsHidden() {
+                return $this->isHidden;
+            }
+
+            function getIsDeleted() {
+                return $this->isDeleted;
+            }
+
+            function getCreateDate() {
+                return $this->createDate;
+            }
+
+            function setId($id) {
+                $this->id = $id;
+            }
+
+            function setBody($body) {
+                $this->body = $body;
+            }
+
+            function setPicture($picture) {
+                $this->picture = $picture;
+            }
+
+            function setIsHidden($isHidden) {
+                $this->isHidden = $isHidden;
+            }
+
+            function setIsDeleted($isDeleted) {
+                $this->isDeleted = $isDeleted;
+            }
+
+            function setCreateDate($createDate) {
+                $this->createDate = $createDate;
+            }
+   
 }
